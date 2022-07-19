@@ -1,5 +1,4 @@
-/* Kullanýcý tarafýndan girilen metinin þifrelenip,
- çözülmesini saðlayan C programý. */
+/* Kullanici tarafindan girilen metni sifreleyip cozen program. */
  
 #include <stdio.h> 
 #include <string.h> 
@@ -7,12 +6,12 @@
 
 void sifrele(/*parametreler*/char sifre[], int anahtar)
 {
-  /* Ýþaretsiz (unsigned) ön eki kullanýldýðý taktirde,
-	 veri tipi ile saklanacak deðerin sýfýr ve sýfýrdan büyük olmasý saðlanýr.*/
+  /* isaretsiz (unsigned) Ã¶n eki kullanÄ±ldigi taktirde,
+	 veri tipi ile saklanacak degerin sifir ve sifirdan bÃ¼yÃ¼k olmasi saglanir.*/
   unsigned int i;
   for (i = 0; i < strlen(sifre); ++i)
   // strlen : karakter dizisini verir. 
-  // ++i : deðiþkenin deðerini bir arttýr. sonra döngüyü iþlet. 
+  // ++i : degiskenin degerini bir arttirir. sonra dÃ¶ngÃ¼ iÅŸler. 
   {
   	
     sifre[i] = sifre[i] - anahtar;
